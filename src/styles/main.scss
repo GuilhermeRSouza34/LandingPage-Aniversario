@@ -1,22 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@use 'hero';
+@use 'activities';
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', sans-serif;
 }
 
 .container {
-    text-align: center;
-}
-
-h1 {
-    color: #333;
-}
-
-#countdown {
-    font-size: 24px;
-    color: #555;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+    
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
 }
