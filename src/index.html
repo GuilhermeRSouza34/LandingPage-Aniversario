@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Meu Aniversário!</h1>
-        <div id="countdown"></div>
-    </div>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero__title">
+                My party
+            </h1>
+            <p id="counter" class="hero__text"></p>
+            <a class="hero__call" href="#"><button class="hero__call__button">Lista</button></a>
+        </div>
+    </header>
+    <section class="activities">
+        <div class="container" data-aos="fade-right">
+            <img class="activities__img" src="https://placehold.co/300" alt="Drink">
+            <p class="activities__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos odio, error enim animi voluptatum. Sit, dolore optio? Dolor delectus quia voluptate quos laborum quidem expedita, quo nesciunt molestiae! Omnis.</p>
+        </div>
+    </section>
+    <section class="activities activities--image-right">
+        <div class="container" data-aos="fade-left">
+            <img class="activities__img" src="https://placehold.co/300" alt="Beer Pong">
+            <p class="activities__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos odio, error enim animi voluptatum. Sit, dolore optio? Dolor delectus quia voluptate quos laborum quidem expedita, quo nesciunt molestiae! Omnis.</p>
+        </div>
+    </section>
+    <section class="activities activities">
+        <div class="container" data-aos="fade-right">
+            <img class="activities__img" src="https://placehold.co/300" alt="Beer Pong">
+            <p class="activities__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos odio, error enim animi voluptatum. Sit, dolore optio? Dolor delectus quia voluptate quos laborum quidem expedita, quo nesciunt molestiae! Omnis.</p>
+        </div>
+    </section>
 
-    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
