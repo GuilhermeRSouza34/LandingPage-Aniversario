@@ -1,0 +1,41 @@
+.activities {
+    background-color: black;
+
+    @media (max-width: 640px) {
+        overflow-x: hidden;
+    }
+
+    @media (max-width: 1024px) {
+        overflow-x: hidden;
+    }
+    
+    &--image-right {
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        padding: 2em 0;
+        display: flex;
+        gap: 2em;
+        align-items: center;
+
+        @media (max-width: 640px) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        color: white;
+    }
+
+    &__img {
+        border-radius: 8px;
+
+        @media (max-width: 640px) {
+            width: 100%;
+        }
+    }
+}
